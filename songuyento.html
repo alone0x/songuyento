@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    n = 10;
+
+    function SoNt() {
+        Count = 1;
+
+        num = 3;
+        while (Count <= n) {
+            for (Kt = 2; Kt < num; Kt++) {
+                if (num % Kt === 0) {
+                    console.log(num + " không phải số nt");
+                    num++;
+                    Kt = 2;
+                }
+            }
+            document.write(num + "là số nguyên tố" + "<br>");
+            Count++;
+
+            num++;
+        }
+
+    }
+
+    SoNt();
+</script>
+</body>
+</html>
